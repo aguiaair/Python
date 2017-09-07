@@ -9,12 +9,8 @@ print('''
  / /   | | | '_ \/ __| __/ _` | | |/ _ \ '__\ \   |  _/ _ \| '__|    |  __| / _` | | | |/ _` | '__/ _` |/ _ \    | |\/| | / __| 
  \ \  _| |_| | | \__ \ || (_| | | |  __/ |  / /   | || (_) | |       | |___| (_| | |_| | (_| | | | (_| | (_) |   | |  | | \__ \ 
   | ||_____|_| |_|___/\__\__,_|_|_|\___|_| | |    |_| \___/|_|       |______\__,_|\__,_|\__,_|_|  \__,_|\___/    |_|  |_| |___/ 
-  _\_\___   ____                          /_/                                                                                   
- /_ |/ _ \ / __ \                                                                                                               
-  | | | | | |  | |                                                                                                              
-  | | | | | |  | |                                                                                                              
-  | | |_| | |__| |                                                                                                              
-  |_|\___/ \____/ _                                      _           _                                                          
+   \_\                                    /_/                                                                                                                                                                                               
+  _____       _   _                                      _           _                                                          
  |  __ \     | | | |                                    (_)         | |                                                         
  | |__) |   _| |_| |__   ___  _ __       _ __  _ __ ___  _  ___  ___| |_ ___                                                    
  |  ___/ | | | __| '_ \ / _ \| '_ \     | '_ \| '__/ _ \| |/ _ \/ __| __/ __|                                                   
@@ -28,17 +24,18 @@ print('''
 print('Please Read: Hello, Welcome to the setup wizazrd for my python projects, this is an installer which fetches the latest version of my projects. Once you have run this once you wont need to do it again, inside the Year 10.py you can find update options!')
 input('Press enter to continue...')
 print('Grabbing link...')
-url = 'http://fase2.tk/kingscollege/term_1/data.zip' 
-filename = 'data.zip'  
+url = '-----------URL here-----------' 
+filename = '-----------ZIP file-----------'  
 print('Downloading...')
 urllib.request.urlretrieve(url, filename)
 print('Done!')
 print('Preparing to unzip...')
-zip_ref = zipfile.ZipFile('data.zip', 'r')
+zip_ref = zipfile.ZipFile(filename, 'r')
 print('Unzipping...')
 zip_ref.extractall()
 zip_ref.close()
 print('Done!')
+#############NOT NECESSARY##############
 print('Running setup in 2s...')
 time.sleep(2)
 deir=os.getcwd()
